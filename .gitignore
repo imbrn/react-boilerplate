@@ -1,0 +1,5 @@
+# Package manages
+node_modules/
+
+# Build files
+build/
