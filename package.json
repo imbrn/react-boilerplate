@@ -1,0 +1,28 @@
+{
+  "name": "es-boilerplate",
+  "version": "0.1.0",
+  "description": "EcmaScript 6+ boilerplate with Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruno02221/es-boilerplate.git"
+  },
+  "keywords": [
+    "es",
+    "ecmascript",
+    "es6",
+    "es7",
+    "javascript",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "Bruno C. Couto (brunodev02221@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bruno02221/es-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bruno02221/es-boilerplate#readme"
+}
