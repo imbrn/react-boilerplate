@@ -28,7 +28,8 @@ module.exports = {
           options: {
             presets: ['env'],
             plugins: [
-              'transform-class-properties'
+              'transform-class-properties',
+              'transform-object-rest-spread',
             ]
           }
         }
