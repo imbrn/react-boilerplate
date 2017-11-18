@@ -21,18 +21,7 @@ module.exports = merge(common, {
     clientLogLevel: 'none',
     noInfo: true,
     open: true,
-    quiet: true,
     https: protocol === 'https',
-
-    after: () => {
-      console.log('Accessing the application');
-      console.log('=================================');
-      console.log('\nIn your machine:');
-      console.log(`${protocol}://${host}:${port}/`);
-      console.log(`${protocol}://localhost:${port}/`);
-      console.log('\nIn your network:')
-      console.log(`${protocol}://{youLocalExternalIp}:${port}`);
-    }
   },
 
   module: {
