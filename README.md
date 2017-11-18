@@ -1,2 +1,2 @@
-# es-boilerplate
-EcmaScript 6+ boilerplate with Webpack.
+# react-boilerplate
+React boilerplate with Webpack.

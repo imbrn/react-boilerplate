@@ -1,4 +1,9 @@
+import React from 'react';
+import { render } from 'react-dom';
 import './index.css';
-import Example from './example';
+import Example from './Example';
 
-document.querySelector('#message').innerHTML = new Example().message('Hello', 'World');
+render(
+  React.createElement(Example),
+  document.getElementById('root')
+);

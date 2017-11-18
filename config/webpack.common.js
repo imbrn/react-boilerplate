@@ -21,12 +21,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env'],
+            presets: [ 'env', 'react' ],
             plugins: [
               'transform-class-properties'
             ]
@@ -42,6 +42,11 @@ module.exports = {
       title: 'es-boilerplate',
       template: path.join(paths.public, 'index.html')
     })
-  ]
+  ],
+
+  resolve: {
+    modules: [ 'node_modules' ],
+    extensions: [ '.js', '.jsx', '.json' ],
+  }
 
 };
