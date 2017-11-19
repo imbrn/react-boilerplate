@@ -28,7 +28,15 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          'style-loader', 'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: { path: paths.config }
+            }
+          }
+        ]
       }
     ]
   },
