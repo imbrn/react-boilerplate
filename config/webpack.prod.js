@@ -1,3 +1,4 @@
+const paths = require('./paths.js');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
@@ -14,7 +15,15 @@ module.exports = merge(common, {
         test: /\.css$/,
         use: extractCss.extract({
           fallback: 'style-loader',
-          use: 'css-loader',
+          use: [
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                config: { path: paths.config }
+              }
+            }
+          ],
         })
       }
     ]
