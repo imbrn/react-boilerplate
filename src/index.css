@@ -2,6 +2,6 @@ body {
   color: darkgreen;
 }
 
-#message {
+#root {
   display: flex;
 }
