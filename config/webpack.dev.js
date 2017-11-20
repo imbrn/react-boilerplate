@@ -2,27 +2,12 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const paths = require('./paths.js');
-
-const protocol = process.env.PROTOCOL || 'http';
-const host = process.env.HOST || '0.0.0.0';
-const port = process.env.PORT || 3000;
+const devServerConfig = require('./devServerConfig.js');
 
 module.exports = merge(common, {
 
   devtool: 'inline-source-map',
-
-  devServer: {
-    publicPath: '/',
-    contentBase: paths.build,
-    compress: true,
-    hot: true,
-    host: host,
-    port: port,
-    clientLogLevel: 'none',
-    noInfo: true,
-    open: true,
-    https: protocol === 'https',
-  },
+  devServer: devServerConfig,
 
   module: {
     rules: [
