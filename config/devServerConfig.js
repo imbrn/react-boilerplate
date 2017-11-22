@@ -18,7 +18,6 @@ const port = process.env.PORT || 3000;
 
 module.exports = {
   publicPath: '/',
-  contentBase: paths.build,
   compress: true,
   hot: true,
   host: host,
@@ -30,5 +29,5 @@ module.exports = {
     const externalIp = network.findFirstExternalIPv4NetworkAddress();
     printServerAccessInformation(protocol, externalIp.address, port);
     openurl.open(`${protocol}://localhost:${port}`);
-  }
+  },
 };
