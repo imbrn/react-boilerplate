@@ -51,7 +51,7 @@ The default folder structure contains the following architecture:
 
 or
 
-    npm run install
+    npm install
 
 
 ### Starting development server:
@@ -60,7 +60,7 @@ or
 
 or
 
-    npm run start
+    npm start
 
 
 ### Building app for production:
@@ -69,9 +69,11 @@ or
 
 or
 
-    npm run install
+    npm install
+
 
 
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
+
